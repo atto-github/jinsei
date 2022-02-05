@@ -17,6 +17,7 @@ body {
   border: #141414 solid 2px;
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
+  border-radius: 10px;
 }
 
 .header_area header {
@@ -150,6 +151,7 @@ body {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .rss_topic_area ul li a {
@@ -177,10 +179,18 @@ body {
 }
 
 .rss_topic_area ul li .topic_box {
-  padding: 6px;
+  padding: 10px;
 }
 
-.rss_topic_area ul li .topic_box img {
+.rss_topic_area ul li .topic_box .img_box{
+  height: 150px;
+  overflow: hidden;
+}
+
+.rss_topic_area ul li .topic_box .img_box img {
+  display: block;
+  height: 150px;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -196,7 +206,6 @@ body {
 }
 
 .contents {
-  display: flex;
   max-width: 1200px;
   margin: 20px auto 20px;
 }
@@ -211,14 +220,39 @@ body {
   width: 63%;
 }
 
-.contents .main_area .rss_box {
+.contents .main_area .rss_area  {
   box-sizing: border-box;
   border: #141414 solid 2px;
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
   padding: 20px;
   margin-bottom: 20px;
+  border-radius: 10px;
 }
+
+
+.contents .main_area .rss_area .rss_box {
+  overflow:scroll;
+  overflow-x: hidden;
+  height: 400px;
+}
+
+.rss_area .rss_box .blogroll-channel ul li{
+  font-size: 1em;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.8em;
+  padding-bottom: 0.8em;
+  border-bottom: 1px #CCC dashed;
+}
+
+.rss_area .rss_box .blogroll-ad-default a{
+  font-size: 12px;
+  color: #CCCCCC;
+}
+
 
 .contents .main_area .main_box {
   box-sizing: border-box;
@@ -232,7 +266,7 @@ body {
   ;
 }
 
-.main_area .rss_box {}
+
 
 .main_area .main_box .category_title a {
   font-weight: bold;
@@ -261,21 +295,26 @@ body {
 }
 
 .main_area .main_box .first_thread {
-  background-color: #E5E5E5;
-  background: url(../img/stripes-light.png);
+  background-color: #141414;
+  background: url(../img/dark_wood.png);
   background-repeat: repeat;
   padding: 15px 25px 15px 25px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main_area .main_box .first_thread .thumbnail_box {
   width: 100%;
+  height: 300px;
+  overflow: hidden;
 }
 
 .main_area .main_box .first_thread .thumbnail_box img {
-  width: 60%;
-  margin: 10px auto 20px;
   display: block;
+  height: 300px;
+  object-fit: contain;
+  width: 100%;
 }
 
 .main_area .main_box .thread_box {
@@ -340,6 +379,7 @@ body {
   background-color: #FFFFFF;
   padding: 20px;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .main_box .tag_box {

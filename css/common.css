@@ -1,6 +1,43 @@
 @charset "utf-8";
 /* CSS Document */
 
+.fukidashi_midashi {
+	position: relative;
+	background-color: #fff;
+	border-bottom: 2px solid #525252;
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.4em;
+	margin-bottom: 20px;
+	}
+	
+	.fukidashi_midashi:before,
+	.fukidashi_midashi:after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	}
+	
+	.fukidashi_midashi:before {
+	border: 12px solid transparent;
+	border-top: 12px solid #525252;
+	}
+	
+	.fukidashi_midashi:after {
+	border: solid 14px transparent;
+	border-top: solid 14px #fff;
+	margin-top: -5px;
+	}
+	
+	.fukidashi_midashi p {
+	margin: 0;
+	padding: 0;
+	}
+
 
 /*--- display ----------*/
 
