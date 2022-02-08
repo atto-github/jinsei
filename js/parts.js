@@ -23,9 +23,28 @@ $(function() {
 $(function() {
   new Splide( '.splide', {
     type : 'loop',
-    height: '20rem', // スライダーの高さ @type: { number|string }, default: ０
+    height: 'auto', // スライダーの高さ @type: { number|string }, default: ０
     gap: '1em', // スライド間のギャップサイズ @type: { number|string }, default: ０
-    perPage: 2, // 1ページに表示するスライドの数 @type: { number }, default: ０
+    perPage: 5, // 1ページに表示するスライドの数 @type: { number }, default: ０
     perMove: 1, // スライダーが移動するスライドの数 @type: { number }, default: ０
+    breakpoints: {  // ブレークポイントの定義 @type: { boolean|Object }, default: false
+      1200: {
+        height: 'auto',
+        perPage: 4,
+      },
+      1000: {
+        height: 'auto',
+        perPage: 3,
+      },
+      768: {
+        height: 'auto',
+        perPage: 2,
+      },
+      480: {
+        height: 'auto',
+        perPage: 1,
+      }
+
+    }    
   }).mount();
 });

@@ -10,7 +10,7 @@ body {
   position: relative;
 }
 
-/*スマホメニュー*/
+/*スマホメニュー*/  
 /*============
 nav
 =============*/
@@ -154,7 +154,7 @@ nav
 
 .header_area {
   width: 100%;
-  margin: 0px auto 40px;
+  margin: 0px auto 20px;
   box-sizing: border-box;
   border: #141414 solid 2px;
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2);
@@ -332,6 +332,77 @@ nav
       padding: 0px 0px; 
   }
 }
+
+
+
+/*スライド*/
+
+.splide  {
+  padding: 20px;
+}
+
+.splide  .splide__track ul li {
+  width: 19%;
+  box-sizing: border-box;
+  border: #141414 solid 2px;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.splide  .splide__track ul li a {
+  height: 100%;
+  display: block;
+  background-color: #FFFFFF;
+  color: #141414;
+  transition: all 0.4s;
+}
+
+.splide  .splide__track ul li a:hover {
+  background-color: #333;
+  color: #FFF;
+}
+
+.splide  .splide__track ul li .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 10px 10px;
+  border-color: transparent transparent #141414 transparent;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.splide  .splide__track ul li .topic_box {
+  padding: 10px;
+}
+
+.splide  .splide__track ul li .topic_box .img_box{
+  height: 200px;
+  overflow: hidden;
+}
+
+.splide  .splide__track ul li .topic_box .img_box img {
+  display: block;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.splide  .splide__track ul li .topic_box p {
+  margin: 5px 0px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /*IE対策*/
+  line-height: 1.5em;
+  max-height: 4.5em;
+}
+/*//スライド*/
 
 
 
