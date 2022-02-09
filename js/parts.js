@@ -23,11 +23,24 @@ $(function() {
 $(function() {
   new Splide( '.splide', {
     type : 'loop',
+    autoplay : true,
     height: 'auto', // スライダーの高さ @type: { number|string }, default: ０
     gap: '1em', // スライド間のギャップサイズ @type: { number|string }, default: ０
-    perPage: 5, // 1ページに表示するスライドの数 @type: { number }, default: ０
+    perPage: 8, // 1ページに表示するスライドの数 @type: { number }, default: ０
     perMove: 1, // スライダーが移動するスライドの数 @type: { number }, default: ０
     breakpoints: {  // ブレークポイントの定義 @type: { boolean|Object }, default: false
+      1800: {
+        height: 'auto',
+        perPage: 7,
+      },
+      1600: {
+        height: 'auto',
+        perPage: 6,
+      },
+      1400: {
+        height: 'auto',
+        perPage: 5,
+      },
       1200: {
         height: 'auto',
         perPage: 4,

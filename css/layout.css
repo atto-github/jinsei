@@ -339,6 +339,7 @@ nav
 
 .splide  {
   padding: 20px;
+  margin-bottom: 10px;
 }
 
 .splide  .splide__track ul li {
@@ -381,13 +382,13 @@ nav
 }
 
 .splide  .splide__track ul li .topic_box .img_box{
-  height: 200px;
+  height: 160px;
   overflow: hidden;
 }
 
 .splide  .splide__track ul li .topic_box .img_box img {
   display: block;
-  height: 200px;
+  height: 160px;
   object-fit: cover;
   width: 100%;
 }
@@ -423,6 +424,13 @@ nav
   margin: 0px auto 0px;
   padding: 0px 20px;
 }
+@media screen and (max-width: 767px) {
+  .rss_topic_area {
+    display: none;
+  }
+}
+
+
 
 .rss_topic_area ul {
   display: flex;
@@ -431,7 +439,7 @@ nav
 }
 
 .rss_topic_area ul li {
-  width: 19%;
+  width: 24%;
   box-sizing: border-box;
   border: #141414 solid 2px;
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2);
@@ -440,6 +448,10 @@ nav
   overflow: hidden;
   border-radius: 10px;
 }
+
+
+
+
 
 .rss_topic_area ul li a {
   height: 100%;
@@ -670,6 +682,74 @@ nav
   margin-bottom: 20px;
 }
 
+.latest_area{
+
+}
+.latest_area ul{
+
+}
+
+.latest_area a{
+  display: flex;
+  margin-bottom: 12px;
+}
+.latest_area a .img_box{
+  height: auto;
+  overflow: hidden; 
+  width: 50%;
+  height: 75px;  
+  margin-right: 10px; 
+}
+.latest_area a .img_box img{
+  display: block;
+  height: 75px;
+  object-fit: cover;
+  width: 100%;
+}
+.latest_area a .latest_box{
+
+}
+.latest_area a .latest_box h4{
+  font-size: 1em;
+  font-weight: bold;
+  margin: 5px 0px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.5em;
+  max-height: 4.5em;  
+}
+.latest_area a .latest_box p{
+  font-size: 12px;
+}
+
+
+
+.category_area{
+
+}
+.category_area ul{
+}
+.category_area ul li{
+  float: left;
+}
+.category_area ul li a{
+  font-size: 1em;
+  padding: 10px 20px;
+  background-color: #EEE;
+  display: inline-block;
+  margin: 5px 5px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
 .main_box .tag_box {
   background-color: #F6F6F6;
   padding: 10px 20px;
@@ -689,6 +769,8 @@ nav
 }
 .main_box .tag_box p{
 }
+
+
 
 
 
