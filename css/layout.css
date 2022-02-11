@@ -595,7 +595,7 @@ nav
 
 
 
-.main_area .main_box .category_title a {
+.main_area .main_box .category_title a,.main_area .main_box .post-categories a {
   font-weight: bold;
   color: #121212;
   border-radius: 10px;
@@ -666,6 +666,7 @@ nav
 .main_area .main_box .thread_box {
   position: relative;
   margin-bottom: 40px;
+	height: 500px;
 }
 
 .main_area .main_box .thread_box .fade {

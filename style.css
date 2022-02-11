@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* common */
+@import "css/reset.css";
+@import "css/common.css";
+
+/* responsive style */
+@import "css/layout.css";
+
+/* slide */
+@import "css/splide.min.css";
+
+
