@@ -154,7 +154,7 @@ nav
 
 .header_area {
   width: 100%;
-  margin: 0px auto 20px;
+  margin: 0px auto 40px;
   box-sizing: border-box;
   border: #141414 solid 2px;
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2);
@@ -338,7 +338,7 @@ nav
 /*スライド*/
 
 .splide  {
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
   margin-bottom: 10px;
 }
 
@@ -663,13 +663,15 @@ nav
 
 
 
-.main_area .main_box .thread_box {
+/*続きを読む*/
+.home .main_area .main_box .thread_box {
   position: relative;
-  margin-bottom: 40px;
-	height: 500px;
+  margin-bottom: 20px;
+	height: 450px;
+  overflow: hidden;
 }
 
-.main_area .main_box .thread_box .fade {
+.home .main_area .main_box .thread_box .fade {
   position: absolute;
   z-index: 1;
   bottom: 0;
@@ -679,7 +681,7 @@ nav
   background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(255, 255, 255, 0.95) 90%);
 }
 
-.main_area .main_box .lesson_btn {
+.home .main_area .main_box .lesson_btn {
   position: absolute;
   z-index: 1;
   cursor: pointer;
@@ -699,7 +701,28 @@ nav
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2);
   font-weight: bold;
   transition: all 0.4s;
+  bottom: 0px;
 }
+
+
+.single .main_area .main_box .thread_box {
+  position: relative;
+  margin-bottom: 20px;
+	height: auto;
+  overflow: hidden;
+}
+
+.single .main_area .main_box .thread_box .fade {
+  display: none;
+}
+
+.single .main_area .main_box .lesson_btn {
+  display: none;  
+}
+/*//続きを読む*/
+
+
+
 
 .main_area .main_box .lesson_btn:hover {
   color: #FFFFFF;
@@ -734,26 +757,30 @@ nav
   margin-bottom: 20px;
 }
 
+
+
 .latest_area{
-
-}
-.latest_area ul{
-
 }
 
-.latest_area a{
-  display: flex;
+.latest_area ul {
   margin-bottom: 12px;
+  width: 100%;
 }
-.latest_area a .img_box{
-  height: auto;
-  overflow: hidden; 
-  width: 50%;
-  height: 75px;  
-  margin-right: 10px; 
+.latest_area ul li{
+  margin-bottom: 10px;
+}
+.latest_area ul li a{
+  width: 100%;
+  display: flex;
+  }
+.latest_area ul li a .img_box{
+  overflow: hidden;
+  width: 30%;
+  height: 75px;
+  margin-right: 2%;
 }
 
-.latest_area a .img_box img{
+.latest_area ul li a .img_box img{
   display: block;
   height: 75px;
   object-fit: cover;
@@ -761,52 +788,51 @@ nav
 }
 
 @media(max-width:1000px) and (min-width:900px){
-  .latest_area a .img_box{
+  .latest_area ul li a .img_box{
     width: 80%;
     height: 75px;  
   }
-  .latest_area a .img_box img{
+  .latest_area ul li a .img_box img{
     height: 75px;
   }
 }	
 
 @media(max-width:899px) and (min-width:768px){
-  .latest_area a .img_box{
+  .latest_area ul li a .img_box{
     width: 35%;
     height: 120px;  
   }
-  .latest_area a .img_box img{
+  .latest_area ul li a .img_box img{
     height: 120px;
   }
 }	
 
 @media(max-width:767px) and (min-width:480px){
-  .latest_area a .img_box{
+  .latest_area ul li a .img_box{
     width: 30%;
     height: 100px;  
   }
-  .latest_area a .img_box img{
+  .latest_area ul li a .img_box img{
     height: 100px;
   }
   
 }	
 @media screen and (max-width: 480px) {
-  .latest_area a .img_box{
+  .latest_area ul li a .img_box{
     width: 70%;
     height: 90px;  
   }
   
-  .latest_area a .img_box img{
+  .latest_area ul li a .img_box img{
     height: 90px;
   }
 
 }
 
-
-.latest_area a .latest_box{
-
+.latest_area ul li a .latest_box{
+  width: 68%;
 }
-.latest_area a .latest_box h4{
+.latest_area ul li a .latest_box h4{
   font-size: 1em;
   font-weight: bold;
   margin: 5px 0px;
@@ -817,9 +843,12 @@ nav
   line-height: 1.5em;
   max-height: 4.5em;  
 }
-.latest_area a .latest_box p{
+.latest_area ul li a .latest_box p{
   font-size: 12px;
 }
+
+
+
 
 
 
@@ -844,9 +873,6 @@ nav
 
 
 
-
-
-
 .main_box .tag_box {
   background-color: #F6F6F6;
   padding: 10px 20px;
@@ -863,7 +889,8 @@ nav
   padding: 0px 10px;
 }
 .main_box .tag_box dl dd a{
-
+  margin: 0px 5px;
+  font-weight: bold;
 }
 .main_box .tag_box p{
   float: right;
@@ -876,6 +903,11 @@ nav
 
 
 
+/*コメントエリア*/
+.comment-form-cookies-consent {
+  display: none;
+}
+/*//コメントエリア*/
 
 
 

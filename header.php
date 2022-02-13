@@ -27,7 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <?php wp_head(); ?>  
 
 </head>
-<body>
+<body <?php body_class(); ?>>
 	
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPPWNDM"
@@ -75,9 +75,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </header>
     <section class="main_visual_area">
       <div class="main_title">
+      <a href="<?php echo home_url() ?>">
         <p><span>J( ‘ｰ`)し</span><span>＼(^o^)／</span></p>
         <h1>人生ちゃんねる</h1>
         <h2>人々の生き様を見よ!!</h2>
+      </a>  
       </div>
     </section>
     <nav class="nav_box_link">

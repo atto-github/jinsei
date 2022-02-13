@@ -26,83 +26,38 @@
 
 
 
+<!--カスタム投稿-->
+<section class="rss_topic_area">
+<ul>
+<?php $args = array(
+'numberposts' => 8, //表示したい記事の数
+'post_type' => 'matome' //カスタム投稿で作成した投稿タイプ
+);
+$customPosts = get_posts($args);
+if($customPosts) : foreach($customPosts as $post) : setup_postdata( $post );
+?>
+<li>
+<a href="<?php the_permalink(); ?>">
+          <div class="topic_box">
+            <div class="img_box"><?php the_post_thumbnail(); ?></div>
+            <p><?php the_title();?></p>
+            <p><?php the_excerpt(); ?></p>
+          </div>
+        <div class="triangle"></div>
+</a>
+</li>
+<?php endforeach; ?>
+<?php else : //記事が無い場合 ?>
+<p>カスタム投稿記事がありません。</p>
+<?php endif;
+wp_reset_postdata(); //クエリのリセット ?>
+</ul>
+</section>
+<!--//カスタム投稿-->
 
-  <section class="rss_topic_area">
-    <ul>
-      <li>
-        <a href="#" target="_blank">
-          <div class="topic_box">
-            <div class="img_box"><img src="img/test.jpg" width="100%"></div>
-            <p>悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」他悲報】上戸彩、他</p>
-          </div>
-        </a>
-        <div class="triangle"></div>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <div class="topic_box">
-            <div class="img_box"><img src="img/test.jpg" width="100%"></div>
-            <p>悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」他悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」他悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」他</p>
-          </div>
-        </a>
-        <div class="triangle"></div>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <div class="topic_box">
-            <div class="img_box"><img src="img/test.jpg" width="100%"></div>
-            <p>悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」他悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」他悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」他</p>
-          </div>
-        </a>
-        <div class="triangle"></div>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <div class="topic_box">
-            <div class="img_box"><img src="img/01.jpg" width="100%"></div>
-            <p>悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」他悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」他悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」他</p>
-          </div>
-        </a>
-        <div class="triangle"></div>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <div class="topic_box">
-            <div class="img_box"><img src="img/test.jpg" width="100%"></div>
-            <p>悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」他悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」他悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」他</p>
-          </div>
-        </a>
-        <div class="triangle"></div>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <div class="topic_box">
-            <div class="img_box"><img src="img/test.jpg" width="100%"></div>
-            <p>悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」</p>
-          </div>
-        </a>
-        <div class="triangle"></div>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <div class="topic_box">
-            <div class="img_box"><img src="img/test.jpg" width="100%"></div>
-            <p>悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」</p>
-          </div>
-        </a>
-        <div class="triangle"></div>
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          <div class="topic_box">
-            <div class="img_box"><img src="img/test.jpg" width="100%"></div>
-            <p>悲報】上戸彩、結婚出産経て３６歳「もう難しいかな…」</p>
-          </div>
-        </a>
-        <div class="triangle"></div>
-      </li>
-    </ul>
-  </section>
+
+
+
   <section class="contents">
     <div class="flexbox">
       <article class="main_area">
@@ -138,15 +93,11 @@
           </section>
           <!--//suretate-->
           <section class="thread_box">
-            <div class="t_h"><span class="thread_box">1: <span style="color: green;">風吹けば名無し</span> <span style="color: gray;"> 2022/01/27(木) 11:34:58.74 ID:60ZEgBBS0</span></span>
-            </div>
-            <div class="t_b"><span class="thread_txet"> ひどいよ </span></div><br />
-            <div class="t_h"><span class="thread_box">2: <span style="color: green;">風吹けば名無し</span> <span style="color: gray;"> 2022/01/27(木) 11:35:23.71 ID:PUWqkZ460</span></span>
-            </div>
-            <div class="t_b"><span class="thread_txet"> あんだって？ </span></div><br />
-            <div class="t_h"><span class="thread_box">3: <span style="color: green;">風吹けば名無し</span> <span style="color: gray;"> 2022/01/27(木) 11:35:39.53 ID:UrWNO/3ZM</span></span>
-            </div>
-            <div class="t_b"><span class="thread_txet"> 未だに２年前と同じように怖がってたらそれはそれで馬鹿やろ </span></div><br />
+
+
+<?php the_content(); ?>
+
+
             <div class="fade"></div> <a href="<?php the_permalink() ?>" class="lesson_btn move_ac">省略されました。全てを読むにはここを押してください</a> </section>
             <div class="tag_box clearfix">
               <dl> <dt>タグ ：</dt>
