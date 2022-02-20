@@ -99,6 +99,7 @@ wp_reset_postdata(); //クエリのリセット ?>
 
 
             <div class="fade"></div> <a href="<?php the_permalink() ?>" class="lesson_btn move_ac">省略されました。全てを読むにはここを押してください</a> </section>
+            
             <div class="tag_box clearfix">
               <dl> <dt>タグ ：</dt>
                 <dd><?php the_tags('', ' '); ?></dd>
@@ -107,9 +108,12 @@ wp_reset_postdata(); //クエリのリセット ?>
             </div>
         </div>
         <!--//記事-->
+
+
 <?php endwhile; ?>
 <?php endif; ?>    
 
+<?php get_responsive_pagination(5,3);?>
 
 
       </article>

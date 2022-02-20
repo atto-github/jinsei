@@ -40,11 +40,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <nav class="sp_nav">
     <div class="inner">
       <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">このサイトについて</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">RSS</a></li>
-        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="<?php echo home_url() ?>">HOME</a></li>
+        <li><a href="https://www.beautiful-life-channel.com/about/">このサイトについて</a></li>
+        <!--<li><a href="#">Twitter</a></li>
+        <li><a href="#">RSS</a></li>-->
+        <li><a href="https://www.beautiful-life-channel.com/contact/">お問い合わせ</a></li>
       </ul>
     </div>
   </nav>
@@ -61,15 +61,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="header_box">
         <nav class="nav_box">
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">このサイトについて</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">RSS</a></li>
-            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="<?php echo home_url() ?>">HOME</a></li>
+            <li><a href="https://www.beautiful-life-channel.com/about/">このサイトについて</a></li>
+            <!--<li><a href="#">Twitter</a></li>
+            <li><a href="#">RSS</a></li>-->
+            <li><a href="https://www.beautiful-life-channel.com/contact/">お問い合わせ</a></li>
           </ul>
         </nav>
         <div class="search_box">
-          <form method="get" action="#" class="search_container"> <input type="text" size="25" placeholder="　キーワード検索"> <input type="submit" value="&#xf002"> </form>
+        <?php get_search_form(); ?>
         </div>
       </div>
     </header>

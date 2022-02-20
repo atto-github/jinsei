@@ -231,7 +231,7 @@ nav
   }
 }	
 
-.header_area header .search_box .search_container {
+.header_area header .search_box .searchform {
   position: relative;
   box-sizing: border-box;
   display: block;
@@ -242,24 +242,24 @@ nav
   background: #FFFFFF;
 }
 @media(max-width:1000px) and (min-width:769px){
-  .header_area header .search_box .search_container  {
+  .header_area header .search_box .searchform  {
     width: 97%;
     margin: 0px auto;
   }
 }	
 
 
-.header_area header .search_box .search_container input[type="text"] {
+.header_area header .search_box .searchform input[type="text"] {
   border: none;
   height: 2.0em;
   background: #FFFFFF;
 }
 
-.header_area header .search_box .search_container input[type="text"]:focus {
+.header_area header .search_box .searchform input[type="text"]:focus {
   outline: 0;
 }
 
-.header_area header .search_box .search_container input[type="submit"] {
+.header_area header .search_box .searchform input[type="submit"] {
   cursor: pointer;
   font-family: "Font Awesome 5 Free";
   font-size: 1.2em;
@@ -274,7 +274,7 @@ nav
   font-weight: 900;
 }
 
-.header_area header .search_box .search_container ::-webkit-input-placeholder {
+.header_area header .search_box .searchform ::-webkit-input-placeholder {
   color: #141414;
 }
 
@@ -338,7 +338,7 @@ nav
 /*スライド*/
 
 .splide  {
-  padding: 0px 20px 20px 20px;
+  padding: 0px 10px 20px 10px;
   margin-bottom: 10px;
 }
 
@@ -521,7 +521,7 @@ nav
 .contents {
   max-width: 1240px;
   margin: 20px auto 20px;
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 .contents .flexbox {
@@ -664,14 +664,16 @@ nav
 
 
 /*続きを読む*/
-.home .main_area .main_box .thread_box {
+.home .main_area .main_box .thread_box , .category .main_area .main_box .thread_box , .tag .main_area .main_box .thread_box , .search .main_area .main_box .thread_box{
   position: relative;
   margin-bottom: 20px;
 	height: 450px;
   overflow: hidden;
 }
 
-.home .main_area .main_box .thread_box .fade {
+
+
+.home .main_area .main_box .thread_box .fade , .category .main_area .main_box .thread_box .fade , .tag .main_area .main_box .thread_box .fade , .search .main_area .main_box .thread_box .fade{
   position: absolute;
   z-index: 1;
   bottom: 0;
@@ -681,7 +683,7 @@ nav
   background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(255, 255, 255, 0.95) 90%);
 }
 
-.home .main_area .main_box .lesson_btn {
+.home .main_area .main_box .lesson_btn , .category .main_area .main_box .lesson_btn , .tag .main_area .main_box .lesson_btn , .search .main_area .main_box .lesson_btn{
   position: absolute;
   z-index: 1;
   cursor: pointer;
@@ -703,6 +705,12 @@ nav
   transition: all 0.4s;
   bottom: 0px;
 }
+
+
+
+
+
+
 
 
 .single .main_area .main_box .thread_box {
@@ -736,6 +744,7 @@ nav
 .main_area .main_box .thread_box .t_b {
   font-size: 1.2em;
   font-weight: bold;
+  margin-bottom: 40px;
 }
 
 .contents .side_area {
@@ -901,6 +910,124 @@ nav
   }
 }
 
+/*引用元表記*/
+.link_2ch{
+  margin: 10px 0px;
+  color: #D62461;
+}
+
+
+
+/*ページネーション*/
+.cms-pagination {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.cms-pagination ul {
+  position: relative;
+  float: left;
+  left: 50%;
+  margin-bottom: 12px;
+}
+
+.cms-pagination ul li {
+  position: relative;
+  float: left;
+  left: -50%;
+  width: 34px;
+  height: 38px;
+  display: table;
+  margin: 0 2px;
+  display: none;
+}
+
+.cms-pagination ul li.pagination-no-num {
+  width: 50px;
+  display: table;
+}
+
+.cms-pagination ul li.pagination-no-num span {
+  background: #eee;
+  border: 1px solid #ddd;
+  color: #ccc;
+}
+
+.cms-pagination ul li.pagination-sp {
+  display: table;
+}
+
+.cms-pagination ul li a,
+.cms-pagination ul li span {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  border: 1px solid #999;
+  background: #fff;
+}
+
+.cms-pagination ul li a:before,
+.cms-pagination ul li span:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 96%;
+  height: 2px;
+  background: #ccc;
+  bottom: -3px;
+  left: 2%;
+}
+
+.cms-pagination ul li span {
+  background: #121212;
+  border: 1px solid #121212;
+  color: #fff;
+}
+
+.pagination-txt {
+  clear: both;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pagination-txt span {
+  color: #611c34;
+}
+
+@media print,screen and (min-width: 1024px) {
+  .cms-pagination ul li {
+      width: 40px;
+      height: 44px;
+      margin: 0 3px;
+      display: table;
+  }
+  .cms-pagination ul li a {
+      -webkit-transition: background 0.3s ease;
+      -moz-transition: background 0.3s ease;
+      transition: background 0.3s ease;
+  }
+  .cms-pagination ul li a:hover {
+      background: #ccc;
+      -webkit-transition: background 0.3s ease;
+      -moz-transition: background 0.3s ease;
+      transition: background 0.3s ease;
+  }
+  .cms-pagination ul li.pagination-no-num {
+      width: 60px;
+  }
+
+  .pagination-txt {
+      margin-bottom: 60px;
+      color: #FFF;
+  }
+}
+
+/*//ページネーション*/
+
 
 
 /*コメントエリア*/
@@ -1042,11 +1169,110 @@ display: none;
   margin-right: 10px;
 }
 
-
-
 /*//コメントエリア*/
+.your-name{
+
+}
+.wpcf7-email{
+
+}
+.wpcf7-text{
+
+}
+.wpcf7-textarea{
+
+}
+
+.wp-block-contact-form-7-contact-form-selector input[type='text'] {
+  box-sizing: border-box;
+    width: 100%;
+    padding: 0.5em 1em;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .wp-block-contact-form-7-contact-form-selector input[type='text']:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+  }
+  
+  .wp-block-contact-form-7-contact-form-selector input[type='email'] {
+    box-sizing: border-box;
+      width: 100%;
+      padding: 0.5em 1em;
+      transition: 0.3s;
+      letter-spacing: 1px;
+      color: #000000;
+      border: none;
+      border-radius: 10px;
+      background-color: #EEEEEE;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    .wp-block-contact-form-7-contact-form-selector input[type='email']:focus {
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+    }
+
+    .your-message textarea {
+      box-sizing: border-box;
+        width: 100%;
+        padding: 0.5em 1em;
+        transition: 0.3s;
+        letter-spacing: 1px;
+        color: #000000;
+        border: none;
+        border-radius: 10px;
+        background-color: #EEEEEE;
+        margin-bottom: 40px;
+        margin-top: 5px;
+      }
+      .your-message textarea:focus {
+      border: none;
+      outline: none;
+      box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+      }
 
 
+      .wpcf7-submit {
+        border: 2px solid #000;
+        border-radius: 0;
+        background: #fff;
+        transition: 0.3s;
+        cursor: pointer;
+        padding: 10px 20px;
+        width: 60%;
+        font-weight: bold;
+        text-align: center;
+        margin: 0px auto;
+        display: block;     
+      }
+      
+      .wpcf7-submit:hover {
+      color: #fff;
+      background: #000;
+      }
+
+      .wpcf7 form.sent .wpcf7-response-output {
+        border-color: #d62461 !important;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: #d62461;
+        color: #FFFFFF;
+        font-weight: bold;
+      }
+/*お問い合わせ*/
+
+
+
+/*//お問い合わせ*/
 
 footer{
   width: 100%;

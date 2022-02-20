@@ -8,7 +8,7 @@
 
 
 
-<?php if (have_posts()) : ?>
+      <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
         <!--//記事-->
         <div class="main_box">
@@ -27,31 +27,18 @@
 
 
             <div class="fade"></div> <a href="<?php the_permalink() ?>" class="lesson_btn move_ac">省略されました。全てを読むにはここを押してください</a> </section>
-
-            <div class="link_2ch"><p>引用元：<a href="<?php the_field('link_2ch'); ?>" target="_blank"><?php the_field('link_2ch'); ?></a></p></div>
-
             <div class="tag_box clearfix">
               <dl> <dt>タグ ：</dt>
                 <dd><?php the_tags('', ' '); ?></dd>
               </dl>
               <p>コメント&nbsp;<a href="<?php comments_link(); ?>"><?php comments_number('(0)','(1)','(%)'); ?></a></p>
             </div>
-
         </div>
         <!--//記事-->
-		  
-        
-		  
-        <div class="main_box">
-        <?php comments_template(); ?>
-            </div>
-		  
-		  
 <?php endwhile; ?>
 <?php endif; ?>    
 
 <?php get_responsive_pagination(5,3);?>
-
 
       </article>
       <?php get_sidebar(); ?>
