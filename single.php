@@ -31,7 +31,7 @@
               <dl> <dt>タグ ：</dt>
                 <dd><?php the_tags('', ' '); ?></dd>
               </dl>
-              <p><a>コメント( 194 )<?php echo $commentcount; ?> </a></p>
+              <p>コメント&nbsp;<a href="<?php comments_link(); ?>"><?php comments_number('(0)','(1)','(%)'); ?></a></p>
             </div>
 
         </div>

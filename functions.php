@@ -31,6 +31,16 @@ function my_comment_form_remove($arg) {
     return $arg;
      }
  add_filter('comment_form_default_fields', 'my_comment_form_remove');
+// コメントの順番を入れ替える
+ function wp34731_move_comment_field_to_bottom( $fields ) {
+    $comment_field = $fields['comment'];
+    unset( $fields['comment'] );
+    $fields['comment'] = $comment_field;
+  
+    return $fields;
+  }
+  add_filter( 'comment_form_fields', 'wp34731_move_comment_field_to_bottom' );
+
 
 function custom_comment_form($args) {
 	$args['comment_notes_before'] = '';
@@ -40,6 +50,17 @@ function custom_comment_form($args) {
 }
 add_filter('comment_form_defaults', 'custom_comment_form');
 
+
+
+
+/* コメント投稿者名を変更する */
+function set_default_comment_author($name) {
+    if ( $name['comment_author'] == '' ) { // cookieが空の場合
+        $name['comment_author'] = '名無しさん';
+    }
+    return $name;
+};
+add_filter('wp_get_current_commenter', 'set_default_comment_author');
 
 
 ?>

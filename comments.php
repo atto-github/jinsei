@@ -6,10 +6,12 @@
 <!-- 【２】投稿されたコメントの有無確認 -->
 <?php if( have_comments() ): ?>
 
+<div  class="commets_box"> 
 <ul class="commets-list">
   <!-- 【３】コメントリストの表示 -->
   <?php wp_list_comments();?>
 </ul>
+</div>
 
 <?php endif; ?>
 
@@ -19,9 +21,9 @@
   // コメントフォームの設定
   $args = array(
     'title_reply' => 'コメントを書く',
-    'comment_notes_before' => 'コメントを書くtextareaの前に出力される',
-    'comment_notes_after' => 'コメントを書くtextareaの後に出力される',
-    'label_submit' => 'コメントを送信する'
+    'comment_notes_before' => '',
+    'comment_notes_after' => '',
+    'label_submit' => 'コメントする'
   );
 
   // コメントフォームの呼び出し

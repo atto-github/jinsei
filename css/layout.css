@@ -904,9 +904,146 @@ nav
 
 
 /*コメントエリア*/
+.commets_box{
+  margin: 0px 0px 20px ;
+}
+.commets_box ul{
+
+}
+.commets_box ul li{
+
+}
+.commets_box ul li ul li{
+  padding-left: 20px;
+
+}
+
+.comment-form-author {
+  position: relative;
+width: 100%;
+margin: 0px;
+}	
+
+.comment-form-author label{
+  display: block;
+  width: 100%;
+  margin: 20px 0px 5px;	
+}	
+.comment-form-author input[type='text'] {
+box-sizing: border-box;
+  width: 100%;
+  padding: 0.5em 1em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  background-color: #EEEEEE;
+}
+.comment-form-author input[type='text']:focus {
+border: none;
+outline: none;
+box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+
+.comment-form-comment {
+  position: relative;
+width: 100%;
+margin: 0px;
+}	
+
+.comment-form-comment label{
+  display: block;
+  width: 100%;
+  margin: 20px 0px 5px;
+}
+.comment-form-comment textarea {
+box-sizing: border-box;
+  width: 100%;
+  padding: 0.5em 1em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  background-color: #EEEEEE;
+}
+.comment-form-comment textarea:focus {
+border: none;
+outline: none;
+box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+
+.form-submit{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0px;
+}
+.form-submit .submit{
+  
+}
+
+.form-submit .submit {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 10px 20px;
+  width: 60%;
+  font-weight: bold;
+}
+
+.form-submit .submit:hover {
+color: #fff;
+background: #000;
+}
+
+.required{
+  color: red;
+}
 .comment-form-cookies-consent {
   display: none;
 }
+
+.comment-author{
+  font-weight: bold;
+  float: left;
+  }
+
+.comment-author img{
+display: none;
+}
+
+.comment-meta a{
+  margin-left: 10px;
+  color: #848484;
+}
+
+.comment-body{
+}
+.comment-body p{
+  margin: 5px 0px 5px;
+  display: block;
+  width: 100%;
+  background-color: #EEE;
+  padding: 10px;
+  border-radius: 10px;
+}
+.comment {
+  margin-bottom: 20px;
+}
+.comment .reply{
+  }
+.comment .reply a{
+  text-align: right;
+  display: block;
+  margin-right: 10px;
+}
+
+
+
 /*//コメントエリア*/
 
 
