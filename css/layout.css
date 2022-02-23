@@ -1268,11 +1268,69 @@ display: none;
         color: #FFFFFF;
         font-weight: bold;
       }
-/*お問い合わせ*/
 
+      
 
+/*youtubeリンクボタン*/
+.youtube_btn {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
 
-/*//お問い合わせ*/
+a.btn--contact {
+  display: block;
+  padding: 5px 0;
+  color: #fff;
+  background: #bababa;
+  -webkit-box-shadow: 0 5px 0 #b9000e;
+  box-shadow: 0 4px 0 #a7a7a7;
+  margin: 10px 0px 30px;
+}
+
+a.btn--contact i {
+  font-size: 1.2em;
+}
+
+a.btn--contact i.fa-position-left {
+  font-size: 1.2em;
+  left: 1.5em;
+}
+
+a.btn--contact :hover {
+  color: #fff;
+}
+
+.fa-position-left {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  left: 1rem;
+}
+
+.fa-position-right {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  right: 1rem;
+}
+
+/*//youtubeリンクボタン*/
+      
 
 footer{
   width: 100%;

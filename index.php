@@ -68,12 +68,12 @@ wp_reset_postdata(); //クエリのリセット ?>
           <div class="rss_box">
             <!--RSS_AREA-->
             <script type="text/javascript">
-              <!--
-                  var blogroll_channel_id = 325113;
-              // -->
-            </script>
-            <script type="text/javascript" charset="utf-8" src="https://blogroll.livedoor.net/js/blogroll.js"></script>
-            <link rel="stylesheet" type="text/css" href="https://blogroll.livedoor.net/css/default2.css" />
+<!--
+    var blogroll_channel_id = 326088;
+// -->
+</script>
+<script type="text/javascript" charset="utf-8" src="https://blogroll.livedoor.net/js/blogroll.js"></script>
+<link rel="stylesheet" type="text/css" href="https://blogroll.livedoor.net/css/default2.css" />
             <!--//RSS_AREA-->
           </div>
         </section>
@@ -94,9 +94,7 @@ wp_reset_postdata(); //クエリのリセット ?>
           <!--//suretate-->
           <section class="thread_box">
 
-
 <?php the_content(); ?>
-
 
             <div class="fade"></div> <a href="<?php the_permalink() ?>" class="lesson_btn move_ac">省略されました。全てを読むにはここを押してください</a> </section>
             

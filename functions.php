@@ -175,4 +175,34 @@ function get_responsive_pagination($_pagination_range_pc,$_pagination_range_sp){
 
 
 
+//固定ページ検索除外
+function my_posy_search($search) {
+    if(is_search()) {
+      $search .= " AND post_type = 'post'";
+    }
+    return $search;
+  }
+  add_filter('posts_search', 'my_posy_search');
+
+
+
+/*【出力カスタマイズ】検索結果をカスタマイズ */
+function my_pre_get_posts($query) {
+    if ( !is_admin() && $query->is_main_query() && $query->is_search() ) {
+      $query->set( 'orderby', 'date' ); // 日付順
+    }
+  }
+  add_action( 'pre_get_posts','my_pre_get_posts' );
+
+// 検索条件が未入力時にsearch.phpにリダイレクトする
+function set_redirect_template(){
+    if (isset($_GET['s']) && empty($_GET['s'])) {
+        include(TEMPLATEPATH . '/search.php');
+        exit;
+    }
+}
+add_action('template_redirect', 'set_redirect_template');
+
+
+
 ?>

@@ -9,7 +9,7 @@
 <meta name="description" content="人生ちゃんねる　人々の生き様をみよ">
 <meta name="keywords" content="人生,生き様,幸福,不幸,波乱万丈">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://kit.fontawesome.com/e0ee5f11ff.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/e3a73247ed.js" crossorigin="anonymous"></script>
 <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>	
 <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" media="screen">
 <?php wp_enqueue_script('example',get_bloginfo('template_url').'/js/import.js', array('jquery')); ?>

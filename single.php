@@ -6,8 +6,6 @@
     <div class="flexbox">
       <article class="main_area">
 
-
-
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
         <!--//記事-->
