@@ -27,6 +27,7 @@
 
 
 <!--カスタム投稿-->
+<!--
 <section class="rss_topic_area">
 <ul>
 <?php $args = array(
@@ -53,6 +54,7 @@ if($customPosts) : foreach($customPosts as $post) : setup_postdata( $post );
 wp_reset_postdata(); //クエリのリセット ?>
 </ul>
 </section>
+-->
 <!--//カスタム投稿-->
 
 

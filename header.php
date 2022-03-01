@@ -85,11 +85,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav class="nav_box_link">
       <div class="header_box2">
         <ul>
-          <li><a href="#" target="_blank">だめぽアンテナ</a></li>
-          <li><a href="#" target="_blank">にゅーぷる</a></li>
-          <li><a href="#" target="_blank">2chまとめアンテナ</a></li>
-          <li><a href="#" target="_blank">ブロニュー</a></li>
-          <li><a href="#" target="_blank">オワタあんてな </a></li>
+          <li><a href="http://tone.antenam.jp/" target="_blank">音楽総合アンテナ</a></li>
+          <li><a href="http://nullpoantenna.com/" target="_blank">ヌルポあんてな</a></li>
+          <li><a href="https://2ch-c.net/" target="_blank">しぃアンテナ(*ﾟーﾟ)</a></li>
+          <li><a href="http://blog-news.doorblog.jp/" target="_blank">ぶろにゅー</a></li>
+          <li><a href="http://newmofu.doorblog.jp/" target="_blank">にゅーもふ </a></li>
         </ul>
     </nav>
     </div>

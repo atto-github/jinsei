@@ -744,7 +744,7 @@ nav
 .main_area .main_box .thread_box .t_b {
   font-size: 1.2em;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .contents .side_area {
@@ -1328,6 +1328,20 @@ a.btn--contact :hover {
   top: calc(50% - 0.5em);
   right: 1rem;
 }
+
+.youtube {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 
 /*//youtubeリンクボタン*/
       

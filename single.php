@@ -35,6 +35,30 @@
               <p>コメント&nbsp;<a href="<?php comments_link(); ?>"><?php comments_number('(0)','(1)','(%)'); ?></a></p>
             </div>
 
+
+          <!--  
+<ul id="navigation">
+  <li>
+    <?php
+    $prevPost = get_previous_post(true); //前の記事データを取得
+    $prevThumbnail = get_the_post_thumbnail($prevPost->ID, array(60,60) ); //サムネイル取得
+    echo $prevthumbnail;
+    previous_post_link( '%link', $prevThumbnail.'%title' ); //出力
+    ?>
+  </li>
+  <li>
+    <?php
+    $nextPost = get_next_post(true); //次の記事データを取得
+    $nextThumbnail = get_the_post_thumbnail($nextPost->ID, array(60,60) ); //サムネイル取得
+    echo $nextthumbnail;
+    next_post_link( '%link', $nextThumbnail.'%title' ); //出力
+    ?>
+  </li>
+</ul>
+-->
+
+
+
         </div>
         <!--//記事-->
 		  
@@ -48,7 +72,6 @@
 <?php endwhile; ?>
 <?php endif; ?>    
 
-<?php get_responsive_pagination(5,3);?>
 
 
       </article>
