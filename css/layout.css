@@ -590,9 +590,13 @@ nav
   border-radius: 10px;
   margin-bottom: 20px;
   position: relative;
-  ;
+  text-transform: none !important;
 }
-
+@media screen and (max-width: 767px) {
+  .contents .main_area .main_box {
+    padding: 20px 10px;
+  }
+}
 
 
 .main_area .main_box .category_title a,.main_area .main_box .post-categories a {
@@ -884,15 +888,32 @@ nav
 
 .main_box .tag_box {
   background-color: #F6F6F6;
-  padding: 10px 20px;
+  padding: 20px;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 767px) {
+  .main_box .tag_box {
+    padding: 20px 10px;
+  }
+}
+
 .main_box .tag_box dl{
   display: flex;
   float: left;
+  margin-bottom: 0px;
 }
+@media screen and (max-width: 767px) {
+  .main_box .tag_box dl{
+    margin-bottom: 10px;
+  }
+}
+
+
 .main_box .tag_box dl dt{
   margin: 0px;
+  display: inline-block;
+  width: 55px;
 }
 .main_box .tag_box dl dd{
   padding: 0px 10px;
@@ -1298,9 +1319,9 @@ a.btn--contact {
   display: block;
   padding: 5px 0;
   color: #fff;
-  background: #bababa;
+  background: #c8c8c8;
   -webkit-box-shadow: 0 5px 0 #b9000e;
-  box-shadow: 0 4px 0 #a7a7a7;
+  box-shadow: 0 4px 0 #e6e6e6;
   margin: 10px 0px 30px;
 }
 
@@ -1341,10 +1362,49 @@ a.btn--contact :hover {
   width: 100% !important;
   height: 100% !important;
 }
-
-
 /*//youtubeリンクボタン*/
       
+
+/*補足*/
+.hosoku_box{
+	padding: 20px;
+	margin: 0px auto 30px;
+	background-color: #efefef;
+}	
+@media screen and (max-width: 767px) {
+  .hosoku_box{
+    padding: 20px 10px;
+    margin: 0px auto 30px;
+    background-color: #efefef;
+  }	
+}
+.hosoku_box .hosoku_title {
+  position: relative;
+  padding: 0 65px;
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.hosoku_box .hosoku_title:before {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: '';
+  background: #afafaf;
+}
+
+.hosoku_box .hosoku_title span {
+  position: relative;
+  padding: 0 1em;
+  background: #e9e9e9;
+  font-weight: bold;
+}
+/*//補足*/
+
+
 
 footer{
   width: 100%;

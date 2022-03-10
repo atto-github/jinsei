@@ -6,8 +6,8 @@
 <title><?php wp_title( '|', true, 'right' ); bloginfo('name'); ?></title>
 <link rel="apple-touch-icon"  href="apple-touch-icon-precomposed.png" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<meta name="description" content="人生ちゃんねる　人々の生き様をみよ">
-<meta name="keywords" content="人生,生き様,幸福,不幸,波乱万丈">
+<meta name="description" content="音音ちゃんねる">
+<meta name="keywords" content="音楽,PV,MUSIC,音">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/e3a73247ed.js" crossorigin="anonymous"></script>
 <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>	
@@ -21,8 +21,8 @@
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PPPWNDM');</script>
-<!-- End Google Tag Manager -->	
+})(window,document,'script','dataLayer','GTM-KFP74N6');</script>
+<!-- End Google Tag Manager -->
 
 <?php wp_head(); ?>  
 
@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body <?php body_class(); ?>>
 	
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPPWNDM"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFP74N6"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 	
@@ -77,8 +77,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="main_title">
       <a href="<?php echo home_url() ?>">
         <p><span>J( ‘ｰ`)し</span><span>＼(^o^)／</span></p>
-        <h1>人生ちゃんねる</h1>
-        <h2>人々の生き様を見よ!!</h2>
+        <h1>音音ちゃんねる</h1>
+        <h2>No music, no life.</h2>
       </a>  
       </div>
     </section>
