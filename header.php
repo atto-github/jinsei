@@ -6,7 +6,7 @@
 <title><?php wp_title( '|', true, 'right' ); bloginfo('name'); ?></title>
 <link rel="apple-touch-icon"  href="apple-touch-icon-precomposed.png" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<meta name="description" content="音音ちゃんねる">
+<meta name="description" content="音の旅人">
 <meta name="keywords" content="音楽,PV,MUSIC,音">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/e3a73247ed.js" crossorigin="anonymous"></script>
@@ -77,7 +77,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="main_title">
       <a href="<?php echo home_url() ?>">
         <p><span>J( ‘ｰ`)し</span><span>＼(^o^)／</span></p>
-        <h1>音音ちゃんねる</h1>
+        <h1>音の旅人</h1>
         <h2>No music, no life.</h2>
       </a>  
       </div>

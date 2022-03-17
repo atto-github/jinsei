@@ -1,6 +1,6 @@
 <footer id="footer">
     <div class="footer_area">
-      <p>（C）音音ちゃんねる ALL RIGHTS RESERVED.</p>
+      <p>（C）音の旅人 ALL RIGHTS RESERVED.</p>
     </div>
   </footer>
 </article>
